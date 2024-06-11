@@ -6,8 +6,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: My first step
-    uses: ./.github/actions/action.yml
-    with:
-      scope: Dev
-      configFile: 'variables.minimal.json'
-      secrets: '${{ toJson(secrets) }}'
+      uses: ./.github/actions/action.yml
+      with:
+        scope: Dev
+        configFile: 'variables.minimal.json'
+        secrets: '${{ toJson(secrets) }}'
