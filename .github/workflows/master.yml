@@ -6,8 +6,10 @@ jobs:
     steps:
       - uses: actions/checkout@main
         name: Checkout
-      - uses: ./.github/actions/json-variables/
+      - uses: jnus/json-variables@v1
+      - uses: ./action.yml
         with:
           scope: Dev
-          configFile: 'variables.minimal.json'
+          configFile: 'tst.json'
           secrets: '${{ toJson(secrets) }}'
+
