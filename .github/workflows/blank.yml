@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: My first step
+    - name: Set environment specific variables
       uses: ./.github/actions/action.yml
       with:
         scope: Dev
