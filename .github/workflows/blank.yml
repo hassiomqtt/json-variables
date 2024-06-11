@@ -1,18 +1,9 @@
-name: CI
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  workflow_dispatch:
+name: use my action
+on: push
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Run a one-line script
-        uses: ./.github/workflows/actions/action.yml@main
-        with:
-          scope: Dev
-          configFile: './.github/file.json'
-          secrets: '${{ toJson(secrets) }}'
+my_first_job:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v1
+- name: My first step
+uses: ./.github/actions/action.yml
