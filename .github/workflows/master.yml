@@ -12,4 +12,3 @@ jobs:
           scope: Dev
           configFile: 'tst.json'
           secrets: '${{ toJson(secrets) }}'
-
