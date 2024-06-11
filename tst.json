@@ -8,20 +8,4 @@
             "Dev"
           ]
         }
-      },
-      {
-        "Name": "fff",
-        "Value": "addff",
-        "Scope": {
-          "Environment": [
-            "DevTest"
-          ]
-        }
-      },
-      {
-        "Name": "Url",
-        "Value": "https://#{HostName}.com",
-        "Scope": {}
-      }
-    ]
-  }
+      }}
