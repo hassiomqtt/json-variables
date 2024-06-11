@@ -1,7 +1,7 @@
-name: tst
-on: [push]
+name: use my action
+on: push
 jobs:
-  Explore-GitHub-Actions:
+  tst:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
