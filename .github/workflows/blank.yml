@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
-        uses: hassiomqtt/json-variables/.github/workflows/actions/action.yml
+        uses: ./.github/workflows/actions/action.yml@main
         with:
           scope: Dev
           configFile: './.github/file.json'
