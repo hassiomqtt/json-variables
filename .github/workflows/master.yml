@@ -1,11 +1,10 @@
 name: test
 on: push
 jobs:
-  tst:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: jnus/json-variables@v1.0
-        with:
-          scope: Dev
-          configFile: 'tst.json'
-          secrets: '${{ toJson(secrets) }}'
+  steps:
+  - name: Set environment specific variables
+    uses: jnus/json-variables@4a442c701d13455259c65b315c7dce51d1c9edf7
+    with:
+      scope: Dev
+      configFile: 'variables.minimal.json'
+      secrets: '${{ toJson(secrets) }}'
