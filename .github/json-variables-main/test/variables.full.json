@@ -1,0 +1,110 @@
+{
+  "Id": "variableset-Projects-2629",
+  "OwnerId": "Projects-2629",
+  "Version": 2,
+  "Variables": [
+    {
+      "Id": "32061b66-70b7-e12c-f216-145324459f54",
+      "Name": "HostName",
+      "Value": "someDevHostName",
+      "Description": null,
+      "Scope": {
+        "Environment": [
+          "Environments-1"
+        ]
+      },
+      "IsEditable": true,
+      "Prompt": null,
+      "Type": "String",
+      "IsSensitive": false
+    },
+    {
+      "Id": "8bc6dd6a-3156-4889-9ac3-085b51038b00",
+      "Name": "HostName",
+      "Value": "someDevTestHostName",
+      "Description": "",
+      "Scope": {
+        "Environment": [
+          "Environments-2"
+        ]
+      },
+      "IsEditable": true,
+      "Prompt": null,
+      "Type": "String",
+      "IsSensitive": false
+    },
+    {
+      "Id": "f39f2ead-2ac1-1d32-5eda-2b5be62058d8",
+      "Name": "Url",
+      "Value": "https://#{HostName}.com",
+      "Description": null,
+      "Scope": {},
+      "IsEditable": true,
+      "Prompt": null,
+      "Type": "String",
+      "IsSensitive": false
+    }
+  ],
+  "ScopeValues": {
+    "Environments": [
+      {
+        "Id": "Environments-1",
+        "Name": "Dev"
+      },
+      {
+        "Id": "Environments-2",
+        "Name": "DevTest"
+      },
+      {
+        "Id": "Environments-3",
+        "Name": "AcceptTest"
+      },
+      {
+        "Id": "Environments-5",
+        "Name": "ProdTest"
+      },
+      {
+        "Id": "Environments-6",
+        "Name": "Prod"
+      },
+      {
+        "Id": "Environments-7",
+        "Name": "SI"
+      },
+      {
+        "Id": "Environments-4",
+        "Name": "Debug"
+      },
+      {
+        "Id": "Environments-8",
+        "Name": "Unassigned"
+      },
+      {
+        "Id": "Environments-21",
+        "Name": "Drift"
+      },
+      {
+        "Id": "Environments-41",
+        "Name": "Academy"
+      },
+      {
+        "Id": "Environments-61",
+        "Name": "AcceptTestExternal"
+      },
+      {
+        "Id": "Environments-81",
+        "Name": "Feature"
+      }
+    ],
+    "Machines": [],
+    "Actions": [],
+    "Roles": [],
+    "Channels": [],
+    "TenantTags": [],
+    "Processes": []
+  },
+  "SpaceId": "Spaces-1",
+  "Links": {
+    "Self": "/api/Spaces-1/variables/variableset-Projects-2629"
+  }
+}

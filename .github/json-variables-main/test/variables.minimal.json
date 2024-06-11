@@ -1,0 +1,57 @@
+{
+  "Variables": [
+    {
+      "Name": "HostName",
+      "Value": "someDevHostName",
+      "Scope": {
+        "Environment": [
+          "Dev"
+        ]
+      }
+    },
+    {
+      "Name": "HostName",
+      "Value": "someDevTestHostName",
+      "Scope": {
+        "Environment": [
+          "DevTest"
+        ]
+      }
+    },
+    {
+      "Name": "Url",
+      "Value": "https://#{HostName}.com",
+      "Scope": {}
+    },
+    {
+      "Name": "SecretA",
+      "Value": "${{secrets.REPO_SECRET_A}}",
+      "Scope": {}
+    },
+    {
+      "Name": "ConnectionString",
+      "Value": "username=user;password=#{SecretA}",
+      "Scope": {}
+    },
+    {
+      "Name": "Environment",
+      "Value": "#{Context.Environment}",
+      "Scope": {}
+    },
+    {
+      "Name": "MultipleSubstitutions",
+      "Value": "lirum larum rum_lerum  #{Environment}.lirum_larum.ram #{Environment}.laj_lurim.lerum",
+      "Scope": {}
+    },
+    {
+      "Name": "TwoUniqueSubstitutions",
+      "Value": "lirum larum rum_lerum  #{Environment}.lirum_larum.ram #{HostName}.laj_lurim.lerum",
+      "Scope": {}
+    },
+    {
+      "Name": "ToUpperExpression",
+      "Value": "#{Environment}",
+      "Scope": {}
+    }
+  ]
+}
