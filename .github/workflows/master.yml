@@ -4,8 +4,6 @@ jobs:
   tst:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        name: Checkout
       - uses: jnus/json-variables@v1.0
         with:
           scope: Dev

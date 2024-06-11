@@ -1,8 +1,8 @@
 {
     "Variables": [
       {
-        "Name": "HostName",
-        "Value": "someDevHostName",
+        "Name": "adf",
+        "Value": "adf",
         "Scope": {
           "Environment": [
             "Dev"
@@ -10,8 +10,8 @@
         }
       },
       {
-        "Name": "HostName",
-        "Value": "someDevTestHostName",
+        "Name": "fff",
+        "Value": "addff",
         "Scope": {
           "Environment": [
             "DevTest"
