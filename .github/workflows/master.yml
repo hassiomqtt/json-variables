@@ -1,4 +1,4 @@
-name: use my action
+name: test
 on: push
 jobs:
   tst:
@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         name: Checkout
-      - uses: jnus/json-variables@v1
+      - uses: jnus/json-variables@v1.0
       - uses: ./action.yml
         with:
           scope: Dev
