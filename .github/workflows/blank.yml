@@ -1,0 +1,18 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a one-line script
+        uses: ./action.yml
+        with:
+          scope: Dev
+          configFile: './.github/file.json'
+          secrets: '${{ toJson(secrets) }}'
