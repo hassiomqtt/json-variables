@@ -1,3 +1,4 @@
+on: [push]
 deploy_to_dev:
     runs-on: ubuntu-latest
     steps:
