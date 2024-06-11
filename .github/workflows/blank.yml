@@ -9,5 +9,5 @@ jobs:
       uses: ./.github/actions/json-variables/
       with:
         scope: Dev
-        configFile: 'tst.json'
-        secrets: '${{ toJson(secrets) }}'
+        configFile: './.github/tst.json'
+#        secrets: '${{ toJson(secrets) }}'
