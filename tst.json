@@ -17,6 +17,15 @@
           "DevTest"
         ]
       }
+    },
+    {
+      "Name": "HostName",
+      "Value": "api",
+      "Scope": {
+        "Environment": [
+          "api"
+        ]
+      }
     }
   ]
 }
