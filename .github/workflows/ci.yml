@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Set environment specific variables
-      uses: hassiomqtt/json-variables@main
+      uses: ./.github/actions/json
       with:
         scope: Dev
         configFile: 'tst.json'
@@ -50,7 +50,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Set environment specific variables
-      uses: hassiomqtt/json-variables@main
+      uses: ./.github/actions/json
       with:
         scope: DevTest
         configFile: 'tst.json'
