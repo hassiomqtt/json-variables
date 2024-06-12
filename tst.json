@@ -26,6 +26,15 @@
           "api"
         ]
       }
+    },
+    {
+      "Name": "Storage_Path",
+      "Value": "/storagetest",
+      "Scope": {
+        "Environment": [
+          "api"
+        ]
+      }
     }
   ]
 }
