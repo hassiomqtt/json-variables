@@ -10,3 +10,6 @@ jobs:
             scope: Dev
             configFile: 'tst.json'
             secrets: '${{ toJson(secrets) }}'
+      - name: Step 1
+        run: |
+          echo "State is: '${{ env.Hostname }}'"
