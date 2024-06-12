@@ -1,0 +1,12 @@
+on: [push]
+jobs:
+  deploy_to_dev:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v1
+      - name: My first step
+        uses: ./.github/actions/json
+        with:
+            scope: Dev
+            configFile: 'tst.json'
+            secrets: '${{ toJson(secrets) }}'
