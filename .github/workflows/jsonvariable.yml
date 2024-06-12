@@ -7,7 +7,7 @@ jobs:
       - name: My first step
         uses: ./.github/actions/json
         with:
-            scope: Dev
+            scope: DevTest
             configFile: 'tst.json'
             secrets: '${{ toJson(secrets) }}'
       - name: Step 1
