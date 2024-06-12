@@ -12,4 +12,4 @@ jobs:
             secrets: '${{ toJson(secrets) }}'
       - name: Step 1
         run: |
-          echo "State is: '${{ env.Hostname }}'"
+          echo "State is: '${{ env.HostName }}'"
